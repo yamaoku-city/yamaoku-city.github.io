@@ -8,45 +8,103 @@
 </head>
 <body>
 
-<header style="background:#0b5cab;color:white;padding:15px;">
-  <h1 style="margin:0;">山奥市（やまおくし）公式ホームページ</h1>
-  <div style="font-size:14px;">※このサイトはこちら側世界のページです</div>
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <strong>山奥市（やまおくし）公式ホームページ</strong>
+      <span>※このサイトは守護された自治体サイトです</span>
+    </div>
+
+    <form class="search" action="search.html" method="get">
+      <input name="q" placeholder="サイト内検索（ダミー）" aria-label="サイト内検索">
+      <button type="submit">検索</button>
+    </form>
+  </div>
 </header>
 
-<nav style="background:#083e77;padding:10px;">
-  <a href="#" style="color:white;margin-right:15px;">くらし・手続き</a>
-  <a href="#" style="color:white;margin-right:15px;">観光・文化</a>
-  <a href="#" style="color:white;margin-right:15px;">防災</a>
-  <a href="#" style="color:white;margin-right:15px;">市政情報</a>
+<nav class="nav">
+  <div class="container">
+    <a href="life.html">くらし・手続き</a>
+    <a href="tourism.html">観光・文化</a>
+    <a href="disaster.html">防災</a>
+    <a href="admin.html">市政情報</a>
+    <a href="news.html">新着情報</a>
+  </div>
 </nav>
 
-<main style="padding:20px;font-family:sans-serif;">
-  <h2>ようこそ山奥市へ</h2>
-  <p>
-    豊かな森林と清流に護られ、安全が確保されている「山奥市」へようこそ。
-  </p>
+<!-- 緊急情報がない時は、このブロックを削除/コメントアウトしてOK -->
+<section class="alert">
+  <div class="container">
+    <span class="badge">緊急</span>
+    <div>
+      <strong>【訓練】局所的破壊に伴う防災行政無線の試験放送を実施します</strong>
+      <p>2026年2月15日 12:00〜（予定）／。<a href="disaster.html">防災ページへ</a></p>
+    </div>
+  </div>
+</section>
 
-  <h3>新着情報</h3>
-  <ul>
-    <li>2026年2月11日 市営バス ダイヤ改正（謝罪）</li>
-    <li>2026年2月09日 職員募集（日本広報担当者）</li>
-    <li>2026年2月03日 パブリックコメント実施（山奥市広報に関する事項）</li>
-  </ul>
+<main class="container">
+  <div class="kv">
+    <h1>暮らしの近くに、行政の窓口を。</h1>
+    <p>人口約12万8千人。豊かな森林と清流に囲まれた自然都市「山奥市」（※設定はすべて創作）。</p>
+  </div>
 
-  <h3>よく見られるページ</h3>
-  <ul>
-    <li>転入・転出手続き</li>
-    <li>住民票・戸籍証明</li>
-    <li>ごみ・リサイクル</li>
-    <li>子育て支援</li>
-  </ul>
+  <div class="grid" style="margin-top:16px;">
+    <aside class="card">
+      <h2>よく見られるページ</h2>
+      <div class="quicklinks">
+        <a href="life.html#moving">転入・転出・引越し（表ルート）</a>
+        <a href="life.html#certificate">住民票・戸籍・各種証明（永久）</a>
+        <a href="life.html#tax">税・保険・年金（基本）</a>
+        <a href="life.html#garbage">ごみ・リサイクル（人間用）</a>
+        <a href="life.html#childcare">子育て・教育（頑張りましょう）</a>
+        <a href="disaster.html#shelter">避難所・防災（重要）</a>
+      </div>
+
+      <hr>
+      <h2>広報・刊行物</h2>
+      <ul class="list">
+        <li><a href="#">広報やまおく（2026年2月号）※PDFダミー</a></li>
+        <li><a href="#">市勢要覧（概要）※ー</a></li>
+        <li><a href="#">統計（人口・産業）※ー</a></li>
+      </ul>
+    </aside>
+
+    <section class="card">
+      <h2>新着情報</h2>
+      <div class="news">
+        <div class="news-item">
+          <small>2026年2月11日｜交通</small>
+          <a href="news.html#n20260211">市営バス ダイヤ改正（架空）のお知らせ</a>
+        </div>
+        <div class="news-item">
+          <small>2026年2月9日｜募集</small>
+          <a href="news.html#n20260209">【募集】会計年度任用職員（架空）を募集します</a>
+        </div>
+        <div class="news-item">
+          <small>2026年2月3日｜市政</small>
+          <a href="news.html#n20260203">パブリックコメント（架空）実施のお知らせ</a>
+        </div>
+      </div>
+
+      <h3>目的別メニュー</h3>
+      <ul class="list">
+        <li><a href="life.html">くらし・手続き</a>：引越し／証明／税／子育て／ごみ など</li>
+        <li><a href="admin.html">市政情報</a>：市長の部屋／計画／議会／入札（架空）</li>
+        <li><a href="tourism.html">観光・文化</a>：イベント／特産品／温泉・渓谷（架空）</li>
+        <li><a href="disaster.html">防災</a>：避難所／ハザード（架空）／防災行政無線（架空）</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div><strong>山奥市役所</strong> 〒3333-0099 山奥市中央集約地1番1号</div>
+      <div>代表：111-222-4949／開庁時間：平日 8:30〜17:15（架空）</div>
+      <div>このサイトは貴方がいる日本に所在する実在の自治体・団体とは関係ありません。</div>
+    </div>
+  </div>
 </main>
-
-<footer style="background:#f0f0f0;padding:15px;margin-top:20px;">
-  <strong>山奥市役所</strong><br>
-  〒777-6543 山奥市中央集約地1番1号<br>
-  電話：111-3939-5353（代表）
-</footer>
 
 </body>
 </html>
