@@ -1,14 +1,10 @@
-<div class="hero">
-  <img src="PXL_20260208_033046935.jpg" alt="山奥市の風景">
-</div>
-
-
-
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>山奥市公式ホームページ</title>
+  <meta name="description" content="山奥市（架空）の公式ホームページです。くらし・手続き、観光・文化、防災、市政情報、新着情報を掲載しています。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,11 +13,11 @@
   <div class="container">
     <div class="brand">
       <strong>山奥市（やまおくし）公式ホームページ</strong>
-      <span>※このサイトは守護された自治体サイトです</span>
+      <span>※このサイトは守護された自治体サイトです（創作）</span>
     </div>
 
     <form class="search" action="search.html" method="get">
-      <input name="q" placeholder="サイト内検索（ダミー）" aria-label="サイト内検索">
+      <input name="q" placeholder="サイト内検索（ダミー） 例：ごみ / 転入 / 子育て" aria-label="サイト内検索">
       <button type="submit">検索</button>
     </form>
   </div>
@@ -37,21 +33,42 @@
   </div>
 </nav>
 
-<!-- 緊急情報がない時は、このブロックを削除/コメントアウトしてOK -->
 <section class="alert">
   <div class="container">
     <span class="badge">緊急</span>
     <div>
       <strong>【訓練】局所的破壊に伴う防災行政無線の試験放送を実施します</strong>
-      <p>2026年2月15日 12:00〜（予定）／。<a href="disaster.html">防災ページへ</a></p>
+      <p>2026年2月15日 12:00〜（予定）／ <a href="disaster.html">防災ページへ</a></p>
     </div>
   </div>
 </section>
 
 <main class="container">
-  <div class="kv">
+
+  <!-- ★ここが市の写真（hero）です：htmlの外に出さないこと★ -->
+  <div class="hero">
+    <img src="PXL_20260208_033046935.jpg" alt="山奥市の風景">
+  </div>
+
+  <div class="kv" style="margin-top:16px;">
     <h1>暮らしの近くに、行政の窓口を。</h1>
     <p>人口約12万8千人。豊かな森林と清流に囲まれた自然都市「山奥市」（※設定はすべて創作）。</p>
+  </div>
+
+  <!-- 目的別（自治体トップあるあるの“入口”を増やす） -->
+  <div class="card" style="margin-top:16px;">
+    <h2>目的別メニュー</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+      <a class="news-item" href="life.html#moving">引越し・転入転出</a>
+      <a class="news-item" href="life.html#certificate">住民票・戸籍・証明</a>
+      <a class="news-item" href="life.html#tax">税・保険・年金</a>
+      <a class="news-item" href="life.html#garbage">ごみ・リサイクル</a>
+      <a class="news-item" href="life.html#childcare">子育て・教育</a>
+      <a class="news-item" href="disaster.html#shelter">避難所・防災</a>
+    </div>
+    <p style="margin:10px 0 0; color:var(--muted); font-size:12px;">
+      ※「歌志内市のような入口の多いトップ」を意識した構成です（創作）。
+    </p>
   </div>
 
   <div class="grid" style="margin-top:16px;">
@@ -67,11 +84,22 @@
       </div>
 
       <hr>
+
       <h2>広報・刊行物</h2>
       <ul class="list">
         <li><a href="#">広報やまおく（2026年2月号）※PDFダミー</a></li>
         <li><a href="#">市勢要覧（概要）※ー</a></li>
         <li><a href="#">統計（人口・産業）※ー</a></li>
+      </ul>
+
+      <hr>
+
+      <h2>施設・窓口（架空）</h2>
+      <ul class="list">
+        <li><a href="#">市役所本庁舎（案内）</a></li>
+        <li><a href="#">市民課（証明・届出）</a></li>
+        <li><a href="#">福祉課（相談）</a></li>
+        <li><a href="#">観光振興課（観光・イベント）</a></li>
       </ul>
     </aside>
 
@@ -92,6 +120,20 @@
         </div>
       </div>
 
+      <h3>募集・イベント（架空）</h3>
+      <ul class="list">
+        <li><a href="#">市民講座（架空）「雪道の安全対策」</a></li>
+        <li><a href="#">山奥の森まつり（架空）開催のお知らせ</a></li>
+        <li><a href="#">市立図書館（架空）展示のご案内</a></li>
+      </ul>
+
+      <h3>事業者向け（架空）</h3>
+      <ul class="list">
+        <li><a href="admin.html">入札・契約情報（架空）</a></li>
+        <li><a href="#">補助金・支援制度（架空）</a></li>
+        <li><a href="#">指定管理者募集（架空）</a></li>
+      </ul>
+
       <h3>目的別メニュー</h3>
       <ul class="list">
         <li><a href="life.html">くらし・手続き</a>：引越し／証明／税／子育て／ごみ など</li>
@@ -102,6 +144,16 @@
     </section>
   </div>
 
+  <div class="card" style="margin-top:16px;">
+    <h2>便利リンク</h2>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px;">
+      <a class="news-item" href="life.html">くらし・手続き</a>
+      <a class="news-item" href="disaster.html">防災</a>
+      <a class="news-item" href="tourism.html">観光・文化</a>
+      <a class="news-item" href="admin.html">市政情報</a>
+    </div>
+  </div>
+
   <div class="footer">
     <div class="container">
       <div><strong>山奥市役所</strong> 〒3333-0099 山奥市中央集約地1番1号</div>
@@ -109,6 +161,7 @@
       <div>このサイトは貴方がいる日本に所在する実在の自治体・団体とは関係ありません。</div>
     </div>
   </div>
+
 </main>
 
 </body>
